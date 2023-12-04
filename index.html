@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Tarjeta para una persona especial :D</title>
+  <title>Tarjeta Virtual Interactiva</title>
 </head>
 <body>
-  <div class="card" id="card">
-    <div class="message" id="message">¡Haz clic para descubrir un mensaje especial!</div>
+  <div class="container">
+    <div class="card" id="card">
+      <div class="message" id="message">¡Haz clic para descubrir un mensaje especial!</div>
+    </div>
+    <div class="button-container">
+      <button id="nextButton" onclick="nextCard()">¿Quieres otra tarjeta, mi vida?</button>
+      <button id="previousButton" onclick="previousCard()">¿Quieres recordar los mensajes anteriores, mi amor?</button>
+      <button id="randomButton" onclick="randomCard()">¿Quieres ver un mensaje aleatorio, mi cielo?</button>
+    </div>
   </div>
-  <button id="nextButton" onclick="nextCard()">¿Quieres otra tarjeta, mi vida?</button>
   <script src="script.js"></script>
 </body>
 </html>
