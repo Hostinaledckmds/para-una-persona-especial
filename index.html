@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Tarjeta Virtual Interactiva</title>
 </head>
-<body>
+<body onclick="PlayAudio()">
   <div class="container">
     <div class="card" id="card">
       <div class="message" id="message">¡Haz clic para descubrir un mensaje especial!</div>
@@ -17,6 +17,19 @@
       <button id="randomButton" onclick="randomCard()">¿Quieres ver un mensaje aleatorio, mi cielo?</button>
     </div>
   </div>
+  <br><br>
+
+  <audio id="musica" autoplay controls loop>
+    <source src="audio/pequeña historia.mp3" type="audio/mpeg">
+  </audio>
+
+  </section>
+
+  <script>
+    function PlayAudio() {
+      document.getElementById("musica").play();
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
