@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Tarjeta Virtual Interactiva</title>
+  <title>Tarjeta para una persona especial :D</title>
 </head>
-<body onclick="PlayAudio()">
+<body>
   <div class="container">
     <div class="card" id="card">
       <div class="message" id="message">¡Haz clic para descubrir un mensaje especial!</div>
@@ -17,19 +17,6 @@
       <button id="randomButton" onclick="randomCard()">¿Quieres ver un mensaje aleatorio, mi cielo?</button>
     </div>
   </div>
-  <br><br>
-
-  <audio id="musica" autoplay controls loop>
-    <source src="pequeña historia.mp3" type="mpeg">
-  </audio>
-
-  </section>
-
-  <script>
-    function PlayAudio() {
-      document.getElementById("musica").play();
-    }
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
